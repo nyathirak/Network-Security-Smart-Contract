@@ -1,23 +1,11 @@
-# Rust Smart Contract Template
 
-## Getting started
+This smart contract implements security policies on blockchain. The main.rs will provide methods that define security groups and define whitelisted IP adresses to provide network security preventing DDOS attacks and unauthorized access
 
-To get started with this template:
+1. A list of whitelisted IP addresses
+2. Function to check whether ip address is in whitelist
+3. function to add Ip adress to whitelist
+4. function to remove Ip adrress to whitelist
+5. enum of resources/security groups to access by Ips
+6. function to add ip adress to specific security group
+7. function to take in ip and check if in whitelist, what security group then if fulfils conditions it avails resources
 
-1. Click the "Use this template" button to create a new repo based on this template
-2. Update line 2 of `Cargo.toml` with your project name
-3. Update line 4 of `Cargo.toml` with your project author names
-4. Set up the [prerequisites](https://github.com/near/near-sdk-rs#pre-requisites)
-5. Begin writing your smart contract in `src/lib.rs`
-6. Test the contract 
-
-    `cargo test -- --nocapture`
-
-8. Build the contract
-
-    `RUSTFLAGS='-C link-arg=-s' cargo build --target wasm32-unknown-unknown --release`
-
-**Get more info at:**
-
-* [Rust Smart Contract Quick Start](https://docs.near.org/docs/develop/contracts/rust/intro)
-* [Rust SDK Book](https://www.near-sdk.io/)
